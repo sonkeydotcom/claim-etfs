@@ -13,8 +13,9 @@ const App = () => {
   const closeFaqs = () => setOpenFaqs(false);
 
   return (
-    <div className="app-container h-screen flex flex-col items-center justify-center bg-gradient-to-r from-black via-[#0a2436] to-[#124672]">
+    <div className=" h-screen flex flex-col items-center justify-center">
       {/* Background Gradient */}
+      <ParticlesComponent />
       <div
         style={{
           position: "absolute",
@@ -56,9 +57,6 @@ const App = () => {
           FAQ's
         </button>
       </div>
-
-      {/* Particles Background */}
-      <ParticlesComponent />
 
       {/* Modals for Wallet and FAQs */}
       <WalletConnect openWallet={openWallet} closeWallet={closeWallet} />
