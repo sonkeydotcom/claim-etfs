@@ -33,7 +33,7 @@ const ParticlesComponent = () => {
           opacity: 0.3,
           width: 1,
         },
-        move: { direction: "bottom", enable: true, speed: 2 },
+        move: { enable: true, speed: 2 },
         number: { density: { enable: true }, value: 250 },
         opacity: { value: 1 },
         shape: { type: "circle" },
