@@ -115,8 +115,8 @@ const WalletConnect: React.FC<WalletConnectProps> = ({
       )}
 
       <div>
-        <p className="text-xs font-sans p-5 text-slate-400">
-          we do not have own your private there for we cannot access your wallet
+        <p className="text-xs font-sans p-2 text-slate-400">
+          we do not own your private key there for we cannot access your wallet
         </p>
       </div>
     </Modal>
