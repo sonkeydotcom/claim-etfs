@@ -18,9 +18,6 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <ParticlesComponent />
-      <WalletConnect openWallet={openWallet} closeWallet={closeWallet} />
-      <Faqs openFaqs={openFaqs} closeFaqs={closeFaqs} />
       <div
         style={{
           position: "absolute",
@@ -57,6 +54,9 @@ const App = () => {
           FAQ's
         </button>
       </div>
+      <ParticlesComponent />
+      <WalletConnect openWallet={openWallet} closeWallet={closeWallet} />
+      <Faqs openFaqs={openFaqs} closeFaqs={closeFaqs} />
     </div>
   );
 };
