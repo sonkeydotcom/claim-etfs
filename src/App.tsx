@@ -17,7 +17,7 @@ const App = () => {
       style={{
         background: "linear-gradient(145deg, black, #0a2436, #124672)",
         zIndex: -1,
-        position: "fixed",
+        position: "absolute",
         top: 0,
         left: 0,
         width: "100%",
