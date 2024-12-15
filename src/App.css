@@ -1,0 +1,76 @@
+/* Center the entire app content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Styled buttons */
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #0c8ac4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #076d9c;
+}
+
+.faq-container {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  width: 100%; /* Full width */
+  text-align: center; /* Center the button horizontally */
+}
+
+/* Info box styling */
+.info-box {
+  margin: 10px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #076d9c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+/* header styling */
+h1 {
+  color: white;
+}
+
+h4 {
+  color: wheat;
+}
+
+/* anchor styling */
+a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #3fcfe6;
+}
+
+/* Hide scrollbar while allowing scrolling */
+.no-scrollbar {
+  overflow: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
