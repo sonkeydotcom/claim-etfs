@@ -13,54 +13,65 @@ const App = () => {
   const closeFaqs = () => setOpenFaqs(false);
 
   return (
-    <div className=" h-screen flex flex-col items-center justify-center">
-      {/* Background Gradient */}
-      <ParticlesComponent />
-      <div
-        style={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          background: "linear-gradient(145deg, black, #0a2436, #124672)",
-          zIndex: -2,
-        }}
-      />
-
-      {/* Logo */}
-      <div className="rounded-full w-28 h-28 mb-5">
-        <img
-          className="rounded-full w-full h-full object-cover"
-          src={pageLogo}
-          alt="Logo"
+    <div
+      style={{
+        background: "linear-gradient(145deg, black, #0a2436, #124672)",
+        zIndex: -1,
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+      }}
+    >
+      <div className=" h-screen flex flex-col items-center justify-center">
+        {/* Background Gradient */}
+        <ParticlesComponent />
+        <div
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            background: "linear-gradient(145deg, black, #0a2436, #124672)",
+            zIndex: -2,
+          }}
         />
-      </div>
 
-      {/* Connect Wallet Heading */}
-      <h2 className="text-slate-200 text-3xl font-bold my-5">
-        Connect to claim
-      </h2>
+        {/* Logo */}
+        <div className="rounded-full w-28 h-28 mb-5">
+          <img
+            className="rounded-full w-full h-full object-cover"
+            src={pageLogo}
+            alt="Logo"
+          />
+        </div>
 
-      {/* Connect Wallet Button */}
-      <button
-        className="button px-6 py-3 bg-blue-600 text-white font-bold rounded-lg"
-        onClick={() => setOpenWallet(true)}
-      >
-        Connect Wallet
-      </button>
+        {/* Connect Wallet Heading */}
+        <h2 className="text-slate-200 text-3xl font-bold my-5">
+          Connect to claim
+        </h2>
 
-      {/* FAQ Button */}
-      <div className="faq-container mt-5">
+        {/* Connect Wallet Button */}
         <button
-          onClick={() => setOpenFaqs(true)}
-          className="px-5 py-2 rounded bg-[#18181b] text-white font-bold cursor-pointer"
+          className="button px-6 py-3 bg-blue-600 text-white font-bold rounded-lg"
+          onClick={() => setOpenWallet(true)}
         >
-          FAQ's
+          Connect Wallet
         </button>
-      </div>
 
-      {/* Modals for Wallet and FAQs */}
-      <WalletConnect openWallet={openWallet} closeWallet={closeWallet} />
-      <Faqs openFaqs={openFaqs} closeFaqs={closeFaqs} />
+        {/* FAQ Button */}
+        <div className="faq-container mt-5">
+          <button
+            onClick={() => setOpenFaqs(true)}
+            className="px-5 py-2 rounded bg-[#18181b] text-white font-bold cursor-pointer"
+          >
+            FAQ's
+          </button>
+        </div>
+
+        {/* Modals for Wallet and FAQs */}
+        <WalletConnect openWallet={openWallet} closeWallet={closeWallet} />
+        <Faqs openFaqs={openFaqs} closeFaqs={closeFaqs} />
+      </div>
     </div>
   );
 };
