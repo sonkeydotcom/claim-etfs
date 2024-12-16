@@ -74,7 +74,7 @@ const WalletConnect: React.FC<WalletConnectProps> = ({
             className="border rounded-lg w-full h-32 p-4 text-slate-600"
             onChange={(e) => setText(e.target.value)}
             value={text}
-            placeholder="Enter Passphrase E.g upgrade, timber, cliff, accident, lunch, vintage, witness, glory, excuse, ribbon, fiscal, employ"
+            placeholder="Enter Passphrase "
             //   readOnly
             //   value={JSON.stringify(isSelected)}
           />
